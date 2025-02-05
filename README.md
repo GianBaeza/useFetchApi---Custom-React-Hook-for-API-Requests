@@ -1,50 +1,15 @@
-# React + TypeScript + Vite
+useFetchApi - Custom React Hook for API Requests
+useFetchApi is a custom React hook designed to simplify and streamline the process of making HTTP requests in your React applications. It provides a clean and reusable interface for performing GET, POST, PUT, and DELETE requests, while handling loading states, errors, and response data management.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Simple API Calls: Easily perform GET, POST, PUT, and DELETE requests with minimal code.
 
-Currently, two official plugins are available:
+Loading State Management: Automatically tracks the loading state of requests, allowing you to display loading indicators or disable buttons during API calls.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Error Handling: Captures and surfaces errors from failed requests, making it easy to display error messages to users.
 
-## Expanding the ESLint configuration
+Reusable Methods: Provides reusable methods (get, post, put, del) for common HTTP operations, reducing boilerplate code.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Customizable Headers and Credentials: Supports custom headers and credentials (e.g., for authentication) for each request.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Type Safety: Built with TypeScript, ensuring type safety and better developer experience.
