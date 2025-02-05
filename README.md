@@ -13,3 +13,26 @@ Métodos Reutilizables: Proporciona métodos reutilizables (get, post, put, del)
 Cabeceras y Credenciales Personalizables: Soporta cabeceras personalizadas y credenciales (por ejemplo, para autenticación) en cada solicitud.
 
 Seguridad de Tipos: Desarrollado con TypeScript, asegurando la seguridad de tipos y una mejor experiencia para el desarrollador.
+Métodos Disponibles
+get(url, headers, credentials): Realiza una solicitud GET.
+
+post(url, body, headers, credentials): Realiza una solicitud POST con un cuerpo.
+
+put(url, body, headers, credentials): Realiza una solicitud PUT con un cuerpo.
+
+del(url, headers, credentials): Realiza una solicitud DELETE.
+
+Valores Retornados
+data: Los datos de respuesta de la llamada API.
+
+loading: Un booleano que indica si una solicitud está en progreso.
+
+error: Un mensaje de error si la solicitud falla.
+
+get, post, put, del: Funciones para realizar las respectivas solicitudes HTTP.
+
+Personalización
+Puedes personalizar el comportamiento de useFetchApi modificando la función fetchRequest o extendiendo el hook para soportar características adicionales como caché, reintentos o cancelación de solicitudes.
+
+Contribuciones
+¡Las contribuciones son bienvenidas! Si tienes sugerencias, reportes de errores o solicitudes de características, por favor abre un issue o envía un pull request.
